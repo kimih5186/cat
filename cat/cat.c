@@ -274,6 +274,24 @@ int main(void) {
         system("cls");
 
 
+        // 기분 나빠짐
+        printf("6~2: 주사위 눈이 4이하이면 그냥 기분이 나빠집니다.");
+
+        int moodDice = rand() % 6 + 1;
+        printf("주사위를 굴립니다. 또르륵...\n");
+        printf("%d이(가) 나왔습니다!\n", moodDice);
+
+        if (moodDice <= (6 - x)) {
+            if (mood > 0) mood--;
+            printf("아무 이유 없이 기분이 나빠집니다. 고양이니까?\n");
+            printf("쫀떡의 기분이 나빠집니다.\n");
+        }
+        else {
+            printf("쫀떡의 기분은 그대로입니다.\n");
+        }
+
+
+
 
 
         return 0;
