@@ -275,7 +275,7 @@ int main(void) {
 
 
         // 기분 나빠짐
-        printf("6~2: 주사위 눈이 4이하이면 그냥 기분이 나빠집니다.");
+        printf("6~2: 주사위 눈이 4이하이면 그냥 기분이 나빠집니다.\n");
 
         int moodDice = rand() % 6 + 1;
         printf("주사위를 굴립니다. 또르륵...\n");
@@ -350,7 +350,7 @@ int main(void) {
         
         //상호작용
         printf("어떤 상호작용을 하시겠습니까?\n");
-        printf(" 0. 아무것도 하지 않음\n 1. 긁어 주기");
+        printf(" 0. 아무것도 하지 않음\n 1. 긁어 주기\n");
         if (hasToyMouse && hasLaser) {
             printf(" 2. 장난감 쥐로 놀아 주기\n 3. 레이저 포인터로 놀아 주기\n");
         }
@@ -410,6 +410,9 @@ int main(void) {
                 }
             }
             break;
+
+            Sleep(5000);
+            system("cls");
 
 
 
