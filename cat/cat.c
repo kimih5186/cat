@@ -133,7 +133,7 @@ int main(void) {
 
         //방 그리기
         printf("############\n");
-        printf("#H  B#\n");
+        printf("#H       B#\n");
         printf("#");
 
         for (int i = 1; i < ROOM_WIDTH - 1; i++) {
@@ -196,7 +196,7 @@ int main(void) {
 
 
         printf("############\n");
-        printf("#H  B#\n");
+        printf("#H        B#\n");
         printf("#");
 
         for (int i = 1; i < ROOM_WIDTH - 1; i++) {
@@ -253,6 +253,23 @@ int main(void) {
         case 4: printf(" 집사 껌딱지입니다.\n"); break;
         }
         printf("============================================\n\n");
+        Sleep(5000);
+        system("cls");
+
+        // 방 그리기
+        printf("############\n");
+        printf("#H        B#\n");
+        printf("#");
+        for (int i = 1; i < ROOM_WIDTH - 1; i++) {
+            if (i == catPos)
+                printf("C");
+            else if (i == prevPos && catPos != prevPos)
+                printf(".");
+            else
+                printf(" ");
+        }
+        printf("#\n############\n\n");
+
         Sleep(5000);
         system("cls");
 
